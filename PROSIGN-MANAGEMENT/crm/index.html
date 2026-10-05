@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SignCRM Pro — Signage Sales CRM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="mark">C</div><div><b>SignCRM</b><span>PRO</span></div></div>
+  <div class="label">SALES & CUSTOMER MANAGEMENT</div>
+  <nav id="nav">
+    <button class="nav active" data-view="dashboard">▦ <span>Dashboard</span></button>
+    <button class="nav" data-view="leads">◉ <span>Leads</span></button>
+    <button class="nav" data-view="pipeline">◫ <span>Sales Pipeline</span></button>
+    <button class="nav" data-view="customers">♙ <span>Customers</span></button>
+    <button class="nav" data-view="activities">✓ <span>Activities & Follow-ups</span></button>
+    <button class="nav" data-view="quotes">▤ <span>Quotations</span></button>
+    <button class="nav" data-view="lost">↘ <span>Lost / Won History</span></button>
+    <button class="nav" data-view="reports">◒ <span>Reports</span></button>
+  </nav>
+  <div class="bottom">
+    <button class="nav" data-view="backup">⚙ <span>Backup & Settings</span></button>
+    <div class="offline">● Offline-first<br><small>CRM data is stored separately in this browser</small></div>
+  </div>
+</aside>
+
+<main class="main">
+<header class="topbar">
+  <div class="head-left"><button class="icon" id="menu">☰</button><div><div class="eyebrow">Customer relationship management</div><h1 id="title">Dashboard</h1></div></div>
+  <div class="top-right"><span id="date"></span><button class="btn primary" id="quickLead">+ New Lead</button></div>
+</header>
+<section id="content"></section>
+</main>
+</div>
+<div class="modal hidden" id="modal"><div class="modal-card"><div class="modal-head"><h2 id="modalTitle">Form</h2><button class="icon" id="close">×</button></div><div id="modalBody"></div></div></div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

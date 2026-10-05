@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SignStock Pro — Signage Workshop Inventory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">S</div><div><b>SignStock</b><span>PRO</span></div></div>
+    <div class="workshop">SIGNAGE WORKSHOP</div>
+    <nav id="nav">
+      <button class="nav active" data-view="dashboard">▦ <span>Dashboard</span></button>
+      <button class="nav" data-view="items">▤ <span>Item Master</span></button>
+      <button class="nav" data-view="transactions">⇄ <span>Stock Movements</span></button>
+      <button class="nav" data-view="jobs">▣ <span>Job Cards</span></button>
+      <button class="nav" data-view="wastage">◈ <span>Wastage & Scrap</span></button>
+      <button class="nav" data-view="purchases">🛒 <span>Purchases</span></button>
+      <button class="nav" data-view="suppliers">♙ <span>Suppliers</span></button>
+      <button class="nav" data-view="reports">◒ <span>Reports</span></button>
+    </nav>
+    <div class="side-bottom">
+      <button class="nav" data-view="backup">⚙ <span>Backup & Settings</span></button>
+      <div class="local-badge">● Offline-first<br><small>Data saved in this browser</small></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><button id="mobileMenu" class="icon-btn">☰</button><div><div class="eyebrow">Inventory control</div><h1 id="pageTitle">Dashboard</h1></div></div>
+      <div class="top-actions"><div id="today"></div><button class="btn primary" id="quickStock">+ Stock Movement</button></div>
+    </header>
+
+    <section id="content"></section>
+  </main>
+</div>
+
+<div id="modal" class="modal hidden"><div class="modal-card"><div class="modal-head"><h2 id="modalTitle">Form</h2><button class="icon-btn" id="closeModal">×</button></div><div id="modalBody"></div></div></div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
